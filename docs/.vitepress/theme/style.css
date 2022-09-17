@@ -1,0 +1,11 @@
+.VPHero .VPImage {
+  height: 180px;
+  width: 180px;
+}
+
+.VPHero .image-bg {
+  background-image: linear-gradient( -45deg, #41b88380 30%, #35495e80 );
+  filter: blur(62px);
+  height: 200px;
+  width: 200px;
+}

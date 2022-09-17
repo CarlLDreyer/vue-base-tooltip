@@ -1,0 +1,47 @@
+.example {
+  border: 1px solid var(--vp-badge-info-border);
+  border-radius: 0.5rem;
+  display: flex;
+  min-height: 32rem;
+}
+
+/** Vue Example Styling */
+.example__button {
+  background-color: #42d392;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  transition: border-color 0.25s;
+}
+
+.example__content {
+  align-items: center;
+  display: inherit;
+  flex: 1;
+  justify-content: center;
+}
+
+.example__controls {
+  display: inherit;
+  border-left: 1px solid var(--vp-badge-info-border);
+  justify-content: center;
+  padding: 1rem;
+  width: 16rem;
+}
+
+@media screen and (max-width: 640px) {
+  .example {
+    flex-direction: column;
+  }
+
+  .example__controls {
+    border-left: none;
+    border-top: 1px solid var(--vp-badge-info-border);
+    width: 100%;
+  }
+}

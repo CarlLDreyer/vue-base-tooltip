@@ -1,0 +1,83 @@
+{
+  "name": "vue-base-tooltip",
+  "version": "1.0.0",
+  "description": "Basic, performant Vue tooltip directive.",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-base-tooltip.umd.js",
+  "module": "./dist/vue-base-tooltip.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-base-tooltip.es.js",
+      "require": "./dist/vue-base-tooltip.umd.js"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "scripts": {
+    "build": "npx vite build --minify && vue-tsc -d --emitDeclarationOnly",
+    "build:watch": "npx vite build --watch",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "dev": "concurrently -n tsc,build,vite 'npm:tsc:watch' 'npm:build:watch' 'vite'",
+    "eslint": "eslint src --ext .ts --fix",
+    "prettier": "prettier --write src",
+    "format": "npm run prettier && npm run eslint",
+    "prepublishOnly": "npm run format && npm run build",
+    "test": "npm run tsc && npm run build",
+    "test:e2e": "npx playwright test",
+    "test:e2e:update-snapshots": "npx playwright test --update-snapshots",
+    "tsc": "vue-tsc --noEmit",
+    "tsc:watch": "npm run tsc -- --watch --preserveWatchOutput"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlLDreyer/vue-base-tooltip.git"
+  },
+  "author": "carlldreyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlLDreyer/vue-base-tooltip/issues"
+  },
+  "homepage": "https://github.com/CarlLDreyer/vue-base-tooltip#readme",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "plugin",
+    "tooltip",
+    "floating-ui",
+    "popper"
+  ],
+  "dependencies": {
+    "@floating-ui/dom": "^1.0.1"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.27.1",
+    "@types/node": "^18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "concurrently": "^7.4.0",
+    "eslint": "^8.23.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-vue": "^9.5.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.2",
+    "vitepress": "^1.0.0-alpha.27",
+    "vue": "^3.2.0",
+    "vue-tsc": "^1.0.9"
+  }
+}
