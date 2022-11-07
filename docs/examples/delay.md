@@ -10,7 +10,7 @@ The default value of the delay is `400ms`, due to [Nielsen Norman Group's](https
 Implementation of the delay using the plugin options.
 ```js
 // main.ts/js // [!code focus]
-import { VueBaseTooltip } from 'vue-base-tooltip'
+import VueBaseTooltip from 'vue-base-tooltip'
 
 app.use(VueBaseTooltip, { delay: 1000 }) // [!code focus]
 ```

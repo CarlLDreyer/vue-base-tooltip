@@ -53,7 +53,7 @@ import VueBaseTooltip from 'https://unpkg.com/vue-base-tooltip/dist/vue-base-too
 Import the plugin to your app and install it.
 ```js
 // main.ts/js
-import { VueBaseTooltip } from 'vue-base-tooltip'
+import VueBaseTooltip from 'vue-base-tooltip'
 
 app.use(VueBaseTooltip)
 ```
@@ -61,7 +61,7 @@ app.use(VueBaseTooltip)
 Add the default styling, this is optional in case you want to style your tooltip from scratch, as described in the [styling section](/guide/styling#use-100-of-your-own-css) of the docs.
 ```js
 // main.ts/js
-import { VueBaseTooltip } from 'vue-base-tooltip'
+import VueBaseTooltip from 'vue-base-tooltip'
 import 'vue-base-tooltip/style.css'
 
 app.use(VueBaseTooltip)

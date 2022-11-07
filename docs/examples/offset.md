@@ -10,7 +10,7 @@ The offset's default value is `8px` which accounts for the size of the arrow. Th
 Implementation of the offset using the plugin options.
 ```js
 // main.ts/js // [!code focus]
-import { VueBaseTooltip } from 'vue-base-tooltip'
+import VueBaseTooltip from 'vue-base-tooltip'
 
 app.use(VueBaseTooltip, { offset: 24 }) // [!code focus]
 ```

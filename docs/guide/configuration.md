@@ -38,7 +38,7 @@ The unit of the delay is `ms` and the default value is `400`.
 Simply pass the delay along the plugin installation:
 ```js
 // main.ts/js // [!code focus]
-import { VueBaseTooltip } from 'vue-base-tooltip'
+import VueBaseTooltip from 'vue-base-tooltip'
 
 app.use(VueBaseTooltip, { delay: 500 }) // [!code focus]
 ```
@@ -63,7 +63,7 @@ The unit of the offset is `px` and the default value is `8`.
 Simply pass the offset along the plugin installation:
 ```js
 // main.ts/js // [!code focus]
-import { VueBaseTooltip } from 'vue-base-tooltip'
+import VueBaseTooltip from 'vue-base-tooltip'
 
 app.use(VueBaseTooltip, { offset: 16 }) // [!code focus]
 ```
