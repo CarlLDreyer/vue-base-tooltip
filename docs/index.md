@@ -36,7 +36,7 @@ features:
     details: Use as plugin or directly import the component and directive.
     icon: 🤸
   - title: Lightweight
-    details: The package only weighs ~Xkb.
+    details: The package only weighs ~2kb.
     icon: 📦
   - title: Type Strong
     details: Written in TypeScript.

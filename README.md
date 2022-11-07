@@ -15,7 +15,7 @@ Vue BaseTooltip is a library, built with [Floating UI](https://floating-ui.com/)
 * 🎨 **Customizable:** Style according to your needs using plain CSS.
 * ☁️ **CDN:** No bundler required.
 * 🤸 **Flexible:** Use as plugin or directly import the component and directive.
-* 📦 **Lightweight:** The package only weighs ~Xkb.
+* 📦 **Lightweight:** The package only weighs ~2kb.
 * 🦾 **Type Strong:** Written in TypeScript.
 
 ## Installation
