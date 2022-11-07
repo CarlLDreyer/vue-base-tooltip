@@ -36,7 +36,7 @@ Vue BaseTooltip can be loaded via CDN using ESM or UMD format.
 
 #### ESM
 ```js
-import { VueBaseTooltip } from 'https://unpkg.com/vue-base-tooltip/dist/vue-base-tooltip.es.js'
+import VueBaseTooltip from 'https://unpkg.com/vue-base-tooltip/dist/vue-base-tooltip.es.js'
 ```
 
 #### UMD
