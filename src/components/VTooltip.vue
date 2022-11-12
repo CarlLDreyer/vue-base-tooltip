@@ -54,7 +54,7 @@ const mouseoverListener = (e: MouseEvent) => {
     activeElement.value = null
   }
 
-  if (target?.hasAttribute('v-tooltip')) {
+  if (target) {
     delayTimeout.value = setTimeout(() => {
       activeElement.value = target as HTMLElement
     }, props.delay)
@@ -154,10 +154,10 @@ onBeforeUnmount(() => {
 
 .v-tooltip__arrow {
   background-color: inherit;
-  height: 0.75rem;
+  height: 0.5rem;
   position: absolute;
   transform: rotate(45deg);
-  width: 0.75rem;
+  width: 0.5rem;
 }
 
 .tooltip-enter-active {
