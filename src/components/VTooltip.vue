@@ -15,7 +15,13 @@
 
 <script setup lang="ts">
 import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { arrow, autoPlacement, computePosition, offset } from '@floating-ui/dom'
+import {
+  arrow,
+  autoPlacement,
+  computePosition,
+  offset,
+  shift,
+} from '@floating-ui/dom'
 
 import type { Ref } from 'vue'
 
@@ -75,6 +81,7 @@ const showTooltip = async () => {
     middleware: [
       ...(!elPlacement ? [autoPlacement()] : []),
       offset(props.offset),
+      shift(),
       arrow({ element: domArrow.value }),
     ],
   }
@@ -149,7 +156,6 @@ onBeforeUnmount(() => {
   justify-content: center;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
-  white-space: pre;
 }
 
 .v-tooltip__arrow {
