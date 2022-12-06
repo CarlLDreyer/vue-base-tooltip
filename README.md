@@ -72,7 +72,7 @@ Use the v-tooltip directive to add a tooltip to an element.
 ```
 
 ## Advanced Usage
-For advanced usage, please check out the [docs](http://localhost:5173/vue-base-tooltip/guide.html#advanced-usage) (I didn't want to make the readme too long).
+For advanced usage, please check out the [docs](https://carlldreyer.github.io//vue-base-tooltip/guide.html#advanced-usage) (I didn't want to make the readme too long).
 
 ## Feedback
 Any feedback is gladly received, whether it's a code improvement or feature request, open an issue / connect with me on [LinkedIn](https://www.linkedin.com/in/carlldreyer/).
