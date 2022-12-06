@@ -58,7 +58,7 @@ import VueBaseTooltip from 'vue-base-tooltip'
 app.use(VueBaseTooltip)
 ```
 
-Add the default styling, this is optional in case you want to style your tooltip from scratch, as described in the [styling section](/guide/styling#use-100-of-your-own-css) of the docs.
+Add the default styling, this is optional in case you want to style your tooltip from scratch, as described in the [styling section](https://carlldreyer.github.io/vue-base-tooltip/guide/styling.html#use-100-of-your-own-css) of the docs.
 ```js
 // main.ts/js
 import VueBaseTooltip from 'vue-base-tooltip'
@@ -72,7 +72,7 @@ Use the v-tooltip directive to add a tooltip to an element.
 ```
 
 ## Advanced Usage
-For advanced usage, please check out the [docs](https://carlldreyer.github.io//vue-base-tooltip/guide.html#advanced-usage) (I didn't want to make the readme too long).
+For advanced usage, please check out the [docs](https://carlldreyer.github.io/vue-base-tooltip/guide.html#advanced-usage) (I didn't want to make the readme too long).
 
 ## Feedback
 Any feedback is gladly received, whether it's a code improvement or feature request, open an issue / connect with me on [LinkedIn](https://www.linkedin.com/in/carlldreyer/).
